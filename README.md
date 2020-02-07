@@ -1,2 +1,6 @@
-# demo site for the `gatbsy-source-notionso` plugin
+# blog
 
+use  
+- gatsby
+- react
+- gatsby-source-notionso
