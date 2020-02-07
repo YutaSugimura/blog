@@ -1,0 +1,7 @@
+.cache
+.now
+package.json
+yarn.lock
+public
+node_modules
+gatsby-config.js
