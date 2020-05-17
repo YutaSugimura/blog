@@ -5,7 +5,7 @@
   "main": "index.js",
   "license": "MIT",
   "scripts": {
-    "build": "gatsby build",
+    "build": "rm -fr .cache public && gatsby build",
     "clean": "gatsby clean",
     "lint": "eslint --ext .js,.jsx src/",
     "lint:fix": "eslint --ext .js,.jsx src/ --fix",
@@ -13,12 +13,12 @@
     "deploy": "gatsby clean && gatsby build && gh-pages -d public"
   },
   "dependencies": {
-    "bulma": "^0.8.0",
-    "gatsby": "^2.19.21",
-    "gatsby-source-notionso": "1.1.6",
+    "bulma": "^0.8.2",
+    "gatsby": "^2.21.33",
+    "gatsby-source-notionso": "^1.1.6",
     "highlight.js": "^9.18.1",
-    "react": "^16.12.0",
-    "react-dom": "^16.12.0"
+    "react": "^16.13.1",
+    "react-dom": "^16.13.1"
   },
   "devDependencies": {
     "babel-eslint": "^10.0.3",

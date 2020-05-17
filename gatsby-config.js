@@ -14,7 +14,7 @@ module.exports = {
       resolve: 'gatsby-source-notionso',
       options: {
         name: 'Blog',
-        rootPageUrl: process.env.GATSBY_ROOT_PAGE_URL,
+        rootPageUrl: process.env.ROOT_PAGE_URL,
         debug: false,
       },
     },
