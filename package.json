@@ -5,12 +5,12 @@
   "main": "index.js",
   "license": "MIT",
   "scripts": {
-    "build": "rm -fr .cache public && gatsby build",
+    "build": "gatsby clean && gatsby build",
     "clean": "gatsby clean",
-    "lint": "eslint --ext .js,.jsx src/",
-    "lint:fix": "eslint --ext .js,.jsx src/ --fix",
     "develop": "gatsby clean && gatsby develop",
-    "deploy": "gatsby clean && gatsby build && gh-pages -d public"
+    "deploy": "gatsby clean && gatsby build && gh-pages -d public",
+    "lint": "eslint --ext .js,.jsx src/",
+    "lint:fix": "eslint --ext .js,.jsx src/ --fix"
   },
   "dependencies": {
     "bulma": "^0.8.2",
