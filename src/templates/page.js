@@ -8,6 +8,7 @@ const Template = ({ data }) => {
   const notionRenderer = notionRendererFactory({
     notionPage: data.notionPageBlog,
   });
+
   return (
     <Layout meta>
       <NotionBlockRenderer

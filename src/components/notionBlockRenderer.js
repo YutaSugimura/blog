@@ -150,7 +150,7 @@ const _attToClassName = {
   c: 'nso-code',
 };
 
-function mkRenderFuncs(_notionPageBlog) {
+const mkRenderFuncs = (_notionPageBlog) => {
   return {
     wrapText: (text) => {
       return <React.Fragment>{text}</React.Fragment>;
@@ -175,6 +175,7 @@ const NotionBlockRenderer = ({ data, renderer, debug }) => {
   const { notionPageBlog } = data;
   const renderFuncs = mkRenderFuncs(notionPageBlog);
   const child = renderer.render(renderFuncs);
+
   return (
     <div>
       <Title title={notionPageBlog.title} />
